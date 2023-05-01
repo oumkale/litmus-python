@@ -102,7 +102,6 @@ setup_params = dict(
 	include_package_data=True,
 	install_requires=install_require,
 	setup_requires=pytest_runner,
-	python_requires='>=3.5.*'
 )
 
 

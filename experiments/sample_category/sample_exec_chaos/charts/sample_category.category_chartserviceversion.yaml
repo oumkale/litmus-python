@@ -1,0 +1,31 @@
+apiVersion: litmuchaos.io/v1alpha1
+kind: ChartServiceVersion
+metadata:
+  name: sample_category 
+  version: 0.1.0
+  annotations:
+    categories: sample_category
+spec:
+  displayName:  chaos
+  categoryDescription: >
+    it execs inside target pods to run the chaos inject commands, waits for the chaos duration and reverts the chaos 
+  experiments:
+  - sample_exec_chaos
+  keywords: 
+    - "pods" 
+    - "kubernetes" 
+    - "sample-category" 
+    - "exec" 
+  maintainers: 
+    - name:oumkale 
+      email:oumkale@chaosnative.com 
+  minKubeVersion: 1.12.0 
+  provider: 
+    name: ChaosNative
+  links: 
+    - name:Documentation 
+      url:https://docs.litmuschaos.io/docs/getstarted/  
+  icon:
+    - url: 
+      mediatype: ""
+  chaosexpcrdlink: https://raw.githubusercontent.com/litmuschaos/chaos-charts/master/charts/sample_category/experiments.yaml
